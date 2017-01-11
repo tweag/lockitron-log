@@ -1,0 +1,25 @@
+{
+  "timestamp": 1422334455,
+  "data": {
+    "activity": {
+      "id": "834745fb-f8ca-4179-be37-2f67112d2831",
+      "kind": "lock-updated-unlocked",
+      "status": "notice",
+      "updated_kind": "lock-updated-locked",
+      "updated_previous": "unlock",
+      "updated_current": "lock"
+    },
+    "user": {
+      "id": "83a708ae-6da4-44b5-8fe9-3b236cb166eb",
+      "email": "bob@example.com",
+      "first_name": "Bob",
+      "last_name": "Barker",
+      "phone": null
+    },
+    "lock": {
+      "id": "da078eb7-991d-4a2b-a9a8-eaa205d26695",
+      "status": "",
+      "name": "Virtual Lockitron"
+    }
+  }
+}

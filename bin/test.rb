@@ -1,0 +1,8 @@
+require 'dotenv'
+Dotenv.load
+
+host    = ARGV[0] || 'http://localhost:9393'
+api_key = ARGV[1] || ENV.fetch('API_KEY')
+
+url = "#{host}?api-key=#{api_key}"
+puts `curl -H "Content-Type: application/json" -X POST -d @spec/example-request.json #{url}`
