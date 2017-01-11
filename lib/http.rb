@@ -4,7 +4,7 @@ require 'net/https'
 module HTTP
   def self.https_post_json(url, data, headers = {})
     uri = URI(url)
-    Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https', verify_mode: OpenSSL::SSL::VERIFY_NONE) do |https|
+    Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https') do |https|
       req_headers = {
         'Content-Type' => 'application/json',
         'Accept'       => 'application/json',

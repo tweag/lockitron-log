@@ -2,6 +2,9 @@
 
 Accept Lockitron webhooks and send events to Slack to keep a log.
 
+This app is meant to have as few dependencies as possible in production so that it has a fast startup time on Heroku.
+Currently, it only depends on `rack` in production.
+
 ## Set up
 
 1. `bundle install`
