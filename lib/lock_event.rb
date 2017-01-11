@@ -5,7 +5,11 @@ class LockEvent < Struct.new(:json)
     Time.at(json.fetch('timestamp'))
   end
 
-  def activity; OpenStruct.new(json.fetch('data').fetch('activity')) end
-  def user;     OpenStruct.new(json.fetch('data').fetch('user'))     end
-  def lock;     OpenStruct.new(json.fetch('data').fetch('lock'))     end
+  def activity; data('activity') end
+  def user;     data('user')     end
+  def lock;     data('lock')     end
+
+  def data(key)
+    OpenStruct.new(json.fetch('data').fetch(key))
+  end
 end

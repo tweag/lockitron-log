@@ -2,7 +2,9 @@ require 'json'
 
 class JSONBody < Struct.new(:app)
   def call(env)
-    env['json'] = JSON.parse(env['rack.input'].read)
+    rack_input = env['rack.input']
+    env['json'] = JSON.parse(rack_input.read)
+    rack_input.rewind
     app.call(env)
   end
 end
