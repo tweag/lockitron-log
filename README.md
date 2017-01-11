@@ -11,7 +11,7 @@ Accept Lockitron webhooks and send events to Slack to keep a log.
     - `API_KEY`: A random string. Generate one by running `bin/generate-key`.
     - `RACK_ENV`: Should be `production` in production. Otherwise, doesn't matter.
 
-3. Run locally with `rackup`
+3. Run locally with `shotgun`
 4. Your webhook URL will be something like `https://example.com/?api-key=my-api-key-abc123`
 
 ## Testing
