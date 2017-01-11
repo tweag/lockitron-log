@@ -1,6 +1,6 @@
 # Lockitron events ➡ Slack
 
-Send Lockitron events to Slack to keep a log
+Accept Lockitron webhooks and send events to Slack to keep a log.
 
 ## Set up
 
@@ -12,6 +12,7 @@ Send Lockitron events to Slack to keep a log
     - `RACK_ENV`: Should be `production` in production. Otherwise, doesn't matter.
 
 3. Run locally with `rackup`
+4. Your webhook URL will be something like `https://example.com/?api-key=my-api-key-abc123`
 
 ## Testing
 
